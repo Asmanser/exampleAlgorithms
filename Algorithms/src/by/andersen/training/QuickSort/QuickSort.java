@@ -15,9 +15,9 @@ public class QuickSort {
         int  i = start;
         int j = end;
         while(i < j) {
-            while(array[current] > array[i])
+            while(i < current && array[current] >= array[i])
                 i++;
-            while(array[current] < array[j])
+            while(j > current && array[current] <= array[j])
                 j--;
             if(i < j) {
                 int temp = array[i];
@@ -31,6 +31,8 @@ public class QuickSort {
                     }
                 }
             }
+            printArray();
+            System.out.println();
         }
         sort(start, current);
         sort(current + 1, end);
