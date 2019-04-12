@@ -4,6 +4,8 @@ public class QuickSort {
 
     private int[] array;
 
+    public QuickSort() {}
+
     public QuickSort(int[] array) {
         this.array = array;
     }

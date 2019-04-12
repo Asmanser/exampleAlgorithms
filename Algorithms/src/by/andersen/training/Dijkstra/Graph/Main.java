@@ -22,8 +22,6 @@ public class Main {
         int value = graph.dijkstra(node6,node4);
         System.out.println();
         System.out.println(value);
-        Integer[] a = {1,2};
-        List<Integer> list = Arrays.asList(a);
     }
 
 }
